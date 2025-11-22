@@ -1,0 +1,220 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.8in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\normalsize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Utkarsh Prakash} \\ \vspace{1pt}
+   \href{mailto:utkarsh.prakash.us@gmail.com}{\underline{utkarsh.prakash.us@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/utkarsh-prakash12/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/upkash}{\underline{GitHub}}
+    $|$ {U.S. Citizen}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Microsoft}{July 2024 – Present}
+      {Software Engineer}{Redmond, WA}
+      \resumeItemListStart
+        \resumeItem{Developed an optimized C++ write path for Azure Blob Storage’s database engine layer with inline erasure coding, reducing background ingestion bandwidth by 75\%.}
+        \resumeItem{Created internal API endpoints, monitoring, and automated incident mitigation for the inline erasure-coding write path, enabling real-time alerts to proactively fix issues and minimize downtime.}
+      	\resumeItem{Built a multithreaded in-memory quantile metrics interface for real-time performance insights, drastically reducing monitoring latency and enabling proactive issue resolution.}
+      	\resumeItem{Owned end-to-end testing for the inline erasure-coding feature, diagnosing complex issues with cross-functional teams and ensuring production-ready performance.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+      {Eightfold}{July 2023 – July 2024}
+      {Software Engineer}{Santa Clara, CA}
+      \resumeItemListStart
+        \resumeItem{Implemented a scalable ETL pipeline (Python, Airflow, S3, Redshift) for time series data, increasing analytics dashboard adoption by 15\% and improving customer insights.}
+        \resumeItem{Designed a scalable framework to track click-through conversions for the learning recommendations platform, enhancing product analytics and insights.} 
+        \resumeItem{Integrated the Talent Management platform with an in-house AI data cleansing API using React (TypeScript) and Python, resulting in a 16\% improvement in customer data quality.}
+        \resumeItem{Developed a personalized learning content recommendation feature using Python and Solr, resulting in increased course completion rates.}      
+      \resumeItemListEnd
+      
+   \resumeSubheading
+      {Meta}{May 2022 – January 2023}
+      {Software Engineer}{Menlo Park, CA}
+      \resumeItemListStart
+      \resumeItem{Designed a C++ framework to optimize erasure coding in a large distributed file storage system based on real-time data access patterns, resulting in a 5\% improvement in storage usage and read times.}
+        \resumeItem{Optimized the data sharding algorithm using C++ and heap profiling, achieving a 60\% reduction in memory usage and increasing storage cluster capacity by 5x.}
+        \resumeItem{Implemented a framework for incremental software roll-outs to storage cluster nodes using C++ and Python, streamlining releases and enhancing data reliability.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Amazon}{June 2021 – September 2021}
+      {Software Development Engineer Intern}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Developed internal Python tooling to simplify access control for 40+ engineers, resulting in streamlined user access and enhanced security.}
+        \resumeItem{Deployed open source data discovery tool to a Kubernetes cluster, streamlining data access for engineers.}   
+      \resumeItemListEnd
+      
+     
+    \resumeSubHeadingListEnd
+    
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California Santa Cruz}{September 2018 – March 2022}
+      {Bachelor of Science – Computer Science}{}
+    %  \begin{itemize}[leftmargin=0.15in, label={}]
+    %\small{\item{
+    % \textbf{Relevant Coursework}{: Data Structures and Algorithms, Computer Systems/Assembly, Computer Architecture, Networking, Comparative Programming, Web Applications, Artificial Intelligence, Applied Machine Learning, Principles of Computer System Design} \\
+    %}}
+ %\end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+	
+    \resumeSubHeadingListStart
+    
+    \resumeProjectHeading
+          {\textbf{Cloud Based Retro Gaming Platform} $|$ \emph{Python, Java, JavaScript}}{February 2023 -- July 2023}
+          \resumeItemListStart
+            \resumeItem{Built a cloud-based retro gaming platform emulating the Gameboy’s CPU and GPU, with a scalable backend for instance management, persistent game states, and real-time gameplay via Python/React WebSockets.}
+          \resumeItemListEnd
+    
+        
+      \resumeProjectHeading
+          {\textbf{Unusual Stock Options Scanner} $|$ \emph{Python, JavaScript, Kubernetes}}{October 2021 -- May 2022}
+          \resumeItemListStart
+
+            \resumeItem{Built an unusual stock options scanner with Airflow/Redshift for historical data, generating daily predictions for 500 stocks and visualizing in Flask/React.}
+
+          \resumeItemListEnd
+         
+    \resumeSubHeadingListEnd
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Python, C++, Java, JavaScript, TypeScript, SQL, AWS, GCP, Kubernetes, Git, Unix, Docker, Flask, React} \\
+     %\textbf{Frameworks}{: Flask Web Framework, React, Tensorflow} \\
+     %\textbf{Developer Tools}{: Git, Unix, Docker, Kubernetes, Amazon AWS, Google Cloud Platform} \\
+    }}
+ \end{itemize}
+
+
+%------------AWARDS------------------
+
+%\section{Awards}
+%  \resumeSubHeadingListStart
+
+ %   \resumeProjectHeading
+%          {\textbf{UC Berkeley CivHacks – Best Civics Hack Winner} $|$ \emph{Python, JavaScript}}{April 2021}
+ %         \resumeItemListStart
+ %           \resumeItem{Developed an iOS application for users to streamline a tedious judicial process using React Native and a Flask RESTful API.}
+ %         \resumeItemListEnd
+      
+     
+ %   \resumeSubHeadingListEnd
+
+\end{document}
