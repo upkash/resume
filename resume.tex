@@ -117,12 +117,12 @@
   \resumeSubHeadingListStart
   \resumeSubheading
       {Microsoft}{July 2024 – Present}
-      {Software Engineer}{Redmond, WA}
+      {Software Engineer - Azure Blob Storage}{Redmond, WA}
       \resumeItemListStart
         \resumeItem{Engineered an O(1) constant time orphan detection algorithm for multi-versioned blobs, eliminating costly linear O(N) iteration over internal database rows and significantly reducing compute overhead during garbage collection.}
         \resumeItem{Owned the Block Link Validator service, accelerating blob data corruption detection from months to hours and preventing customer-facing failures.}
         \resumeItem{Optimized the C++ write path for the blob index layer via inline erasure coding, slashing ingestion-related background traffic by 75\%.}      	
-        \resumeItem{Architected a thread-safe, in-memory C++ metrics library adopted by multiple Azure Storage services, tracking high-fidelity quantile latencies (P99/P99.9) with zero critical I/O overhead.}
+        \resumeItem{Architected a lock-free, thread-safe, in-memory C++ metrics library adopted by multiple Azure Storage services, tracking high-fidelity quantile latencies (P99/P99.9) with zero critical I/O overhead.}
       \resumeItemListEnd
 
   \resumeSubheading
@@ -137,7 +137,7 @@
       
    \resumeSubheading
       {Meta}{May 2022 – January 2023}
-      {Software Engineer}{Menlo Park, CA}
+      {Software Engineer - Warm Storage}{Menlo Park, CA}
       \resumeItemListStart
       \resumeItem{Re-engineered the data sharding algorithm using C++ heap profiling, achieving a 60\% reduction in memory usage and increasing storage cluster capacity by 5x.}
         \resumeItem{Designed a dynamic C++ erasure coding framework that adapts to real-time access patterns, improving storage efficiency and read latency by 5\% across the distributed fleet.}
@@ -195,7 +195,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Python, C++, Java, JavaScript, TypeScript, SQL, AWS, GCP, Kubernetes, Git, Unix, Docker, Flask, React} \\
+     \textbf{C++17, Python, Distributed Systems, Storage, Asynchronous I/O, Erasure Coding, Azure, AWS, Databases} \\
      %\textbf{Frameworks}{: Flask Web Framework, React, Tensorflow} \\
      %\textbf{Developer Tools}{: Git, Unix, Docker, Kubernetes, Amazon AWS, Google Cloud Platform} \\
     }}
